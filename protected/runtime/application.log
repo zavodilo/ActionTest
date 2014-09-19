@@ -1,0 +1,1035 @@
+2014/09/18 15:18:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /www/global.local/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /www/global.local/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/18 15:18:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /www/global.local/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /www/global.local/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/18 15:33:31 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection.connectionString cannot be empty.' in /www/global.local/www/framework/db/CDbConnection.php:369
+Stack trace:
+#0 /www/global.local/www/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /www/global.local/www/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /www/global.local/www/framework/base/CModule.php(387): CDbConnection->init()
+#3 /www/global.local/www/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /www/global.local/www/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /www/global.local/www/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /www/global.local/www/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /www/global.local/www/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /www/global.local/www/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /www/global.local/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /www/global.local/www/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /www/global.local/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /www/global.local/www/framework/web/CWebApplication.php(282): CController->run('')
+#13 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model')
+#14 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /www/global.local/www/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/gii/model
+HTTP_REFERER=http://global.local/gii/default/index
+---
+2014/09/18 16:09:22 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in /www/global.local/www/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /www/global.local/www/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), '?? ?????? ?????...')
+#1 /www/global.local/www/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /www/global.local/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /www/global.local/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /www/global.local/www/framework/web/CWebApplication.php(282): CController->run('list')
+#8 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('category/list')
+#9 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /www/global.local/www/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/category/list
+---
+2014/09/18 16:10:18 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in /www/global.local/www/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /www/global.local/www/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), '?? ?????? ?????...')
+#1 /www/global.local/www/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /www/global.local/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /www/global.local/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /www/global.local/www/framework/web/CWebApplication.php(282): CController->run('list')
+#8 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('category/list')
+#9 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /www/global.local/www/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/category/list
+---
+2014/09/18 16:11:44 [error] [php] Undefined variable: models (/www/global.local/www/protected/controllers/CategoryController.php:154)
+Stack trace:
+#0 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CategoryController->runAction()
+#1 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /www/global.local/www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CategoryController->filterAccessControl()
+#4 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /www/global.local/www/framework/web/CController.php(265): CategoryController->runActionWithFilters()
+#7 /www/global.local/www/framework/web/CWebApplication.php(282): CategoryController->run()
+#8 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /www/global.local/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/category/list
+in /www/global.local/www/protected/controllers/CategoryController.php (154)
+in /www/global.local/www/index.php (13)
+2014/09/18 16:20:24 [error] [exception.CException] exception 'CException' with message 'В классе CategoryController и его поведениях не найден метод или замыкание с именем "model".' in /www/global.local/www/framework/base/CComponent.php:265
+Stack trace:
+#0 /www/global.local/www/protected/controllers/CategoryController.php(160): CComponent->__call('model', Array)
+#1 /www/global.local/www/protected/controllers/CategoryController.php(160): CategoryController->model()
+#2 /www/global.local/www/framework/web/actions/CInlineAction.php(49): CategoryController->actionList()
+#3 /www/global.local/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /www/global.local/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#10 /www/global.local/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /www/global.local/www/framework/web/CWebApplication.php(282): CController->run('list')
+#12 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('category/list')
+#13 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /www/global.local/www/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/category/list
+---
+2014/09/18 16:37:31 [error] [php] Undefined variable: model (/www/global.local/www/protected/controllers/CategoryController.php:150)
+Stack trace:
+#0 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CategoryController->runAction()
+#1 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /www/global.local/www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CategoryController->filterAccessControl()
+#4 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /www/global.local/www/framework/web/CController.php(265): CategoryController->runActionWithFilters()
+#7 /www/global.local/www/framework/web/CWebApplication.php(282): CategoryController->run()
+#8 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /www/global.local/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/category/list
+in /www/global.local/www/protected/controllers/CategoryController.php (150)
+in /www/global.local/www/index.php (13)
+2014/09/18 16:37:33 [error] [php] Undefined variable: model (/www/global.local/www/protected/controllers/CategoryController.php:150)
+Stack trace:
+#0 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CategoryController->runAction()
+#1 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /www/global.local/www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CategoryController->filterAccessControl()
+#4 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /www/global.local/www/framework/web/CController.php(265): CategoryController->runActionWithFilters()
+#7 /www/global.local/www/framework/web/CWebApplication.php(282): CategoryController->run()
+#8 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /www/global.local/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/category/list
+in /www/global.local/www/protected/controllers/CategoryController.php (150)
+in /www/global.local/www/index.php (13)
+2014/09/18 16:38:09 [error] [php] Undefined variable: model (/www/global.local/www/protected/controllers/CategoryController.php:150)
+Stack trace:
+#0 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CategoryController->runAction()
+#1 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /www/global.local/www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CategoryController->filterAccessControl()
+#4 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /www/global.local/www/framework/web/CController.php(265): CategoryController->runActionWithFilters()
+#7 /www/global.local/www/framework/web/CWebApplication.php(282): CategoryController->run()
+#8 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /www/global.local/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/category/list
+in /www/global.local/www/protected/controllers/CategoryController.php (150)
+in /www/global.local/www/index.php (13)
+2014/09/18 16:38:21 [error] [php] Undefined variable: model (/www/global.local/www/protected/controllers/CategoryController.php:150)
+Stack trace:
+#0 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CategoryController->runAction()
+#1 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /www/global.local/www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CategoryController->filterAccessControl()
+#4 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /www/global.local/www/framework/web/CController.php(265): CategoryController->runActionWithFilters()
+#7 /www/global.local/www/framework/web/CWebApplication.php(282): CategoryController->run()
+#8 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /www/global.local/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/category/list
+in /www/global.local/www/protected/controllers/CategoryController.php (150)
+in /www/global.local/www/index.php (13)
+2014/09/18 16:38:22 [error] [php] Undefined variable: model (/www/global.local/www/protected/controllers/CategoryController.php:150)
+Stack trace:
+#0 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CategoryController->runAction()
+#1 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /www/global.local/www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CategoryController->filterAccessControl()
+#4 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /www/global.local/www/framework/web/CController.php(265): CategoryController->runActionWithFilters()
+#7 /www/global.local/www/framework/web/CWebApplication.php(282): CategoryController->run()
+#8 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /www/global.local/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/category/list
+in /www/global.local/www/protected/controllers/CategoryController.php (150)
+in /www/global.local/www/index.php (13)
+2014/09/18 16:38:58 [error] [php] Undefined variable: model (/www/global.local/www/protected/controllers/CategoryController.php:150)
+Stack trace:
+#0 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CategoryController->runAction()
+#1 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /www/global.local/www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CategoryController->filterAccessControl()
+#4 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /www/global.local/www/framework/web/CController.php(265): CategoryController->runActionWithFilters()
+#7 /www/global.local/www/framework/web/CWebApplication.php(282): CategoryController->run()
+#8 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /www/global.local/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/category/list
+in /www/global.local/www/protected/controllers/CategoryController.php (150)
+in /www/global.local/www/index.php (13)
+2014/09/18 16:39:00 [error] [php] Undefined variable: model (/www/global.local/www/protected/controllers/CategoryController.php:150)
+Stack trace:
+#0 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CategoryController->runAction()
+#1 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /www/global.local/www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CategoryController->filterAccessControl()
+#4 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /www/global.local/www/framework/web/CController.php(265): CategoryController->runActionWithFilters()
+#7 /www/global.local/www/framework/web/CWebApplication.php(282): CategoryController->run()
+#8 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /www/global.local/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/category/list
+in /www/global.local/www/protected/controllers/CategoryController.php (150)
+in /www/global.local/www/index.php (13)
+2014/09/18 16:39:01 [error] [php] Undefined variable: model (/www/global.local/www/protected/controllers/CategoryController.php:150)
+Stack trace:
+#0 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CategoryController->runAction()
+#1 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /www/global.local/www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CategoryController->filterAccessControl()
+#4 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /www/global.local/www/framework/web/CController.php(265): CategoryController->runActionWithFilters()
+#7 /www/global.local/www/framework/web/CWebApplication.php(282): CategoryController->run()
+#8 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /www/global.local/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/category/list
+in /www/global.local/www/protected/controllers/CategoryController.php (150)
+in /www/global.local/www/index.php (13)
+2014/09/18 16:39:02 [error] [php] Undefined variable: model (/www/global.local/www/protected/controllers/CategoryController.php:150)
+Stack trace:
+#0 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CategoryController->runAction()
+#1 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /www/global.local/www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CategoryController->filterAccessControl()
+#4 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /www/global.local/www/framework/web/CController.php(265): CategoryController->runActionWithFilters()
+#7 /www/global.local/www/framework/web/CWebApplication.php(282): CategoryController->run()
+#8 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /www/global.local/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/category/list
+in /www/global.local/www/protected/controllers/CategoryController.php (150)
+in /www/global.local/www/index.php (13)
+2014/09/18 16:39:03 [error] [php] Undefined variable: model (/www/global.local/www/protected/controllers/CategoryController.php:150)
+Stack trace:
+#0 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CategoryController->runAction()
+#1 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /www/global.local/www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CategoryController->filterAccessControl()
+#4 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /www/global.local/www/framework/web/CController.php(265): CategoryController->runActionWithFilters()
+#7 /www/global.local/www/framework/web/CWebApplication.php(282): CategoryController->run()
+#8 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /www/global.local/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/category/list
+in /www/global.local/www/protected/controllers/CategoryController.php (150)
+in /www/global.local/www/index.php (13)
+2014/09/18 16:55:57 [error] [php] Undefined variable: modelProduct (/www/global.local/www/protected/controllers/CategoryController.php:150)
+Stack trace:
+#0 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CategoryController->runAction()
+#1 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /www/global.local/www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CategoryController->filterAccessControl()
+#4 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /www/global.local/www/framework/web/CController.php(265): CategoryController->runActionWithFilters()
+#7 /www/global.local/www/framework/web/CWebApplication.php(282): CategoryController->run()
+#8 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /www/global.local/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/category/list
+in /www/global.local/www/protected/controllers/CategoryController.php (150)
+in /www/global.local/www/index.php (13)
+2014/09/18 17:07:37 [error] [php] Undefined variable: product (/www/global.local/www/protected/views/category/list.php:10)
+Stack trace:
+#0 /www/global.local/www/framework/web/CController.php(869): CategoryController->renderFile()
+#1 /www/global.local/www/framework/web/CController.php(782): CategoryController->renderPartial()
+#2 /www/global.local/www/protected/controllers/CategoryController.php(168): CategoryController->render()
+#3 /www/global.local/www/framework/web/actions/CInlineAction.php(49): CategoryController->actionList()
+#4 /www/global.local/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CategoryController->runAction()
+#6 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /www/global.local/www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CategoryController->filterAccessControl()
+#9 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#11 /www/global.local/www/framework/web/CController.php(265): CategoryController->runActionWithFilters()
+#12 /www/global.local/www/framework/web/CWebApplication.php(282): CategoryController->run()
+#13 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /www/global.local/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/category/list
+in /www/global.local/www/protected/views/category/list.php (10)
+in /www/global.local/www/protected/controllers/CategoryController.php (168)
+in /www/global.local/www/index.php (13)
+2014/09/18 17:07:57 [error] [php] Illegal offset type (/www/global.local/www/protected/views/category/list.php:10)
+Stack trace:
+#0 /www/global.local/www/framework/web/CController.php(869): CategoryController->renderFile()
+#1 /www/global.local/www/framework/web/CController.php(782): CategoryController->renderPartial()
+#2 /www/global.local/www/protected/controllers/CategoryController.php(168): CategoryController->render()
+#3 /www/global.local/www/framework/web/actions/CInlineAction.php(49): CategoryController->actionList()
+#4 /www/global.local/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CategoryController->runAction()
+#6 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /www/global.local/www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CategoryController->filterAccessControl()
+#9 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#11 /www/global.local/www/framework/web/CController.php(265): CategoryController->runActionWithFilters()
+#12 /www/global.local/www/framework/web/CWebApplication.php(282): CategoryController->run()
+#13 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /www/global.local/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/category/list
+in /www/global.local/www/protected/views/category/list.php (10)
+in /www/global.local/www/protected/controllers/CategoryController.php (168)
+in /www/global.local/www/index.php (13)
+2014/09/18 17:10:18 [error] [php] Illegal offset type (/www/global.local/www/protected/views/category/list.php:10)
+Stack trace:
+#0 /www/global.local/www/framework/web/CController.php(869): CategoryController->renderFile()
+#1 /www/global.local/www/framework/web/CController.php(782): CategoryController->renderPartial()
+#2 /www/global.local/www/protected/controllers/CategoryController.php(168): CategoryController->render()
+#3 /www/global.local/www/framework/web/actions/CInlineAction.php(49): CategoryController->actionList()
+#4 /www/global.local/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CategoryController->runAction()
+#6 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /www/global.local/www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CategoryController->filterAccessControl()
+#9 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#11 /www/global.local/www/framework/web/CController.php(265): CategoryController->runActionWithFilters()
+#12 /www/global.local/www/framework/web/CWebApplication.php(282): CategoryController->run()
+#13 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /www/global.local/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/category/list
+in /www/global.local/www/protected/views/category/list.php (10)
+in /www/global.local/www/protected/controllers/CategoryController.php (168)
+in /www/global.local/www/index.php (13)
+2014/09/18 17:10:32 [error] [php] Illegal offset type (/www/global.local/www/protected/views/category/list.php:10)
+Stack trace:
+#0 /www/global.local/www/framework/web/CController.php(869): CategoryController->renderFile()
+#1 /www/global.local/www/framework/web/CController.php(782): CategoryController->renderPartial()
+#2 /www/global.local/www/protected/controllers/CategoryController.php(168): CategoryController->render()
+#3 /www/global.local/www/framework/web/actions/CInlineAction.php(49): CategoryController->actionList()
+#4 /www/global.local/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CategoryController->runAction()
+#6 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /www/global.local/www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CategoryController->filterAccessControl()
+#9 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#11 /www/global.local/www/framework/web/CController.php(265): CategoryController->runActionWithFilters()
+#12 /www/global.local/www/framework/web/CWebApplication.php(282): CategoryController->run()
+#13 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /www/global.local/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/category/list
+in /www/global.local/www/protected/views/category/list.php (10)
+in /www/global.local/www/protected/controllers/CategoryController.php (168)
+in /www/global.local/www/index.php (13)
+2014/09/18 17:12:23 [error] [php] Undefined index: Категория 1 (/www/global.local/www/protected/views/category/list.php:10)
+Stack trace:
+#0 /www/global.local/www/framework/web/CController.php(869): CategoryController->renderFile()
+#1 /www/global.local/www/framework/web/CController.php(782): CategoryController->renderPartial()
+#2 /www/global.local/www/protected/controllers/CategoryController.php(168): CategoryController->render()
+#3 /www/global.local/www/framework/web/actions/CInlineAction.php(49): CategoryController->actionList()
+#4 /www/global.local/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CategoryController->runAction()
+#6 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /www/global.local/www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CategoryController->filterAccessControl()
+#9 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#11 /www/global.local/www/framework/web/CController.php(265): CategoryController->runActionWithFilters()
+#12 /www/global.local/www/framework/web/CWebApplication.php(282): CategoryController->run()
+#13 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /www/global.local/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/category/list
+in /www/global.local/www/protected/views/category/list.php (10)
+in /www/global.local/www/protected/controllers/CategoryController.php (168)
+in /www/global.local/www/index.php (13)
+2014/09/18 17:12:56 [error] [php] Undefined offset: 3 (/www/global.local/www/protected/views/category/list.php:10)
+Stack trace:
+#0 /www/global.local/www/framework/web/CController.php(869): CategoryController->renderFile()
+#1 /www/global.local/www/framework/web/CController.php(782): CategoryController->renderPartial()
+#2 /www/global.local/www/protected/controllers/CategoryController.php(168): CategoryController->render()
+#3 /www/global.local/www/framework/web/actions/CInlineAction.php(49): CategoryController->actionList()
+#4 /www/global.local/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CategoryController->runAction()
+#6 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /www/global.local/www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CategoryController->filterAccessControl()
+#9 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#11 /www/global.local/www/framework/web/CController.php(265): CategoryController->runActionWithFilters()
+#12 /www/global.local/www/framework/web/CWebApplication.php(282): CategoryController->run()
+#13 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /www/global.local/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/category/list
+in /www/global.local/www/protected/views/category/list.php (10)
+in /www/global.local/www/protected/controllers/CategoryController.php (168)
+in /www/global.local/www/index.php (13)
+2014/09/18 18:18:56 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'category.active' in 'where clause'. Выполнявшийся SQL-запрос: select product_to_category.product_id, product.name from product_to_category, product where product_to_category.product_id=product.id AND product.active=1 AND category.active=1 AND product_to_category.category_id=1.
+in /www/global.local/www/protected/controllers/CategoryController.php (56)
+in /www/global.local/www/index.php (13)
+2014/09/18 18:18:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'category.active' in 'where clause'. The SQL statement executed was: select product_to_category.product_id, product.name from product_to_category, product where product_to_category.product_id=product.id AND product.active=1 AND category.active=1 AND product_to_category.category_id=1' in /www/global.local/www/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /www/global.local/www/framework/db/CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /www/global.local/www/protected/controllers/CategoryController.php(56): CDbCommand->queryAll()
+#2 [internal function]: CategoryController->actionView('1')
+#3 /www/global.local/www/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(CategoryController), Array)
+#4 /www/global.local/www/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CategoryController), Object(ReflectionMethod), Array)
+#5 /www/global.local/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /www/global.local/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#12 /www/global.local/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /www/global.local/www/framework/web/CWebApplication.php(282): CController->run('view')
+#14 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('category/view/i...')
+#15 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /www/global.local/www/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/category/view/id/1
+HTTP_REFERER=http://global.local/category/index
+---
+2014/09/18 18:18:57 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'category.active' in 'where clause'. Выполнявшийся SQL-запрос: select product_to_category.product_id, product.name from product_to_category, product where product_to_category.product_id=product.id AND product.active=1 AND category.active=1 AND product_to_category.category_id=2.
+in /www/global.local/www/protected/controllers/CategoryController.php (56)
+in /www/global.local/www/index.php (13)
+2014/09/18 18:18:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'category.active' in 'where clause'. The SQL statement executed was: select product_to_category.product_id, product.name from product_to_category, product where product_to_category.product_id=product.id AND product.active=1 AND category.active=1 AND product_to_category.category_id=2' in /www/global.local/www/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /www/global.local/www/framework/db/CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /www/global.local/www/protected/controllers/CategoryController.php(56): CDbCommand->queryAll()
+#2 [internal function]: CategoryController->actionView('2')
+#3 /www/global.local/www/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(CategoryController), Array)
+#4 /www/global.local/www/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CategoryController), Object(ReflectionMethod), Array)
+#5 /www/global.local/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /www/global.local/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#12 /www/global.local/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /www/global.local/www/framework/web/CWebApplication.php(282): CController->run('view')
+#14 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('category/view/i...')
+#15 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /www/global.local/www/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/category/view/id/2
+HTTP_REFERER=http://global.local/category/index
+---
+2014/09/18 18:18:58 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'category.active' in 'where clause'. Выполнявшийся SQL-запрос: select product_to_category.product_id, product.name from product_to_category, product where product_to_category.product_id=product.id AND product.active=1 AND category.active=1 AND product_to_category.category_id=3.
+in /www/global.local/www/protected/controllers/CategoryController.php (56)
+in /www/global.local/www/index.php (13)
+2014/09/18 18:18:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'category.active' in 'where clause'. The SQL statement executed was: select product_to_category.product_id, product.name from product_to_category, product where product_to_category.product_id=product.id AND product.active=1 AND category.active=1 AND product_to_category.category_id=3' in /www/global.local/www/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /www/global.local/www/framework/db/CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /www/global.local/www/protected/controllers/CategoryController.php(56): CDbCommand->queryAll()
+#2 [internal function]: CategoryController->actionView('3')
+#3 /www/global.local/www/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(CategoryController), Array)
+#4 /www/global.local/www/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CategoryController), Object(ReflectionMethod), Array)
+#5 /www/global.local/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /www/global.local/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#12 /www/global.local/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /www/global.local/www/framework/web/CWebApplication.php(282): CController->run('view')
+#14 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('category/view/i...')
+#15 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /www/global.local/www/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/category/view/id/3
+HTTP_REFERER=http://global.local/category/index
+---
+2014/09/18 18:27:54 [error] [php] Undefined variable: model (/www/global.local/www/protected/controllers/CategoryController.php:78)
+Stack trace:
+#0 /www/global.local/www/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /www/global.local/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CategoryController->runAction()
+#3 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /www/global.local/www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#5 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CategoryController->filterAccessControl()
+#6 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#7 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#8 /www/global.local/www/framework/web/CController.php(265): CategoryController->runActionWithFilters()
+#9 /www/global.local/www/framework/web/CWebApplication.php(282): CategoryController->run()
+#10 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /www/global.local/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/category/view/id/1
+in /www/global.local/www/protected/controllers/CategoryController.php (78)
+in /www/global.local/www/index.php (13)
+2014/09/18 18:29:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Страница не активна.' in /www/global.local/www/protected/controllers/CategoryController.php:56
+Stack trace:
+#0 [internal function]: CategoryController->actionView('2')
+#1 /www/global.local/www/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(CategoryController), Array)
+#2 /www/global.local/www/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CategoryController), Object(ReflectionMethod), Array)
+#3 /www/global.local/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /www/global.local/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#10 /www/global.local/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /www/global.local/www/framework/web/CWebApplication.php(282): CController->run('view')
+#12 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('category/view/i...')
+#13 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /www/global.local/www/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/category/view/id/2
+HTTP_REFERER=http://global.local/category/index
+---
+2014/09/18 18:30:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Страница не активна.' in /www/global.local/www/protected/controllers/CategoryController.php:56
+Stack trace:
+#0 [internal function]: CategoryController->actionView('2')
+#1 /www/global.local/www/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(CategoryController), Array)
+#2 /www/global.local/www/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CategoryController), Object(ReflectionMethod), Array)
+#3 /www/global.local/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /www/global.local/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#10 /www/global.local/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /www/global.local/www/framework/web/CWebApplication.php(282): CController->run('view')
+#12 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('category/view/i...')
+#13 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /www/global.local/www/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/category/view/id/2
+HTTP_REFERER=http://global.local/category/index
+---
+2014/09/18 18:47:28 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'product.name' in 'field list'. Выполнявшийся SQL-запрос: select product_to_category.product_id, product.name from product_to_category, category where product_to_category.category_id=category.id AND category.active=1 AND product_to_category.product_id=1.
+in /www/global.local/www/protected/controllers/ProductController.php (61)
+in /www/global.local/www/index.php (13)
+2014/09/18 18:47:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'product.name' in 'field list'. The SQL statement executed was: select product_to_category.product_id, product.name from product_to_category, category where product_to_category.category_id=category.id AND category.active=1 AND product_to_category.product_id=1' in /www/global.local/www/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /www/global.local/www/framework/db/CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /www/global.local/www/protected/controllers/ProductController.php(61): CDbCommand->queryAll()
+#2 [internal function]: ProductController->actionView('1')
+#3 /www/global.local/www/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#4 /www/global.local/www/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#5 /www/global.local/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /www/global.local/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#12 /www/global.local/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /www/global.local/www/framework/web/CWebApplication.php(282): CController->run('view')
+#14 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('product/view/id...')
+#15 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /www/global.local/www/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/product/view/id/1
+HTTP_REFERER=http://global.local/product/index
+---
+2014/09/18 18:51:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Страница не активна.' in /www/global.local/www/protected/controllers/ProductController.php:56
+Stack trace:
+#0 [internal function]: ProductController->actionView('4')
+#1 /www/global.local/www/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#2 /www/global.local/www/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#3 /www/global.local/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /www/global.local/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#10 /www/global.local/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /www/global.local/www/framework/web/CWebApplication.php(282): CController->run('view')
+#12 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('product/view/id...')
+#13 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /www/global.local/www/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/product/view/id/4
+HTTP_REFERER=http://global.local/product/index
+---
+2014/09/18 18:55:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Страница не активна.' in /www/global.local/www/protected/controllers/ProductController.php:56
+Stack trace:
+#0 [internal function]: ProductController->actionView('4')
+#1 /www/global.local/www/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#2 /www/global.local/www/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#3 /www/global.local/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /www/global.local/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#10 /www/global.local/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /www/global.local/www/framework/web/CWebApplication.php(282): CController->run('view')
+#12 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('product/view/id...')
+#13 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /www/global.local/www/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/product/view/id/4
+HTTP_REFERER=http://global.local/product/index
+---
+2014/09/18 19:14:58 [error] [exception.CException] exception 'CException' with message 'Контроллер CategoryController не может найти представление "view_tags".' in /www/global.local/www/framework/web/CController.php:878
+Stack trace:
+#0 /www/global.local/www/framework/web/CController.php(782): CController->renderPartial('view_tags', Array, true)
+#1 /www/global.local/www/protected/controllers/CategoryController.php(110): CController->render('view_tags', Array)
+#2 [internal function]: CategoryController->actionViewTags('1')
+#3 /www/global.local/www/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(CategoryController), Array)
+#4 /www/global.local/www/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CategoryController), Object(ReflectionMethod), Array)
+#5 /www/global.local/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /www/global.local/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#12 /www/global.local/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /www/global.local/www/framework/web/CWebApplication.php(282): CController->run('viewTags')
+#14 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('category/viewTa...')
+#15 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /www/global.local/www/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/category/viewTags/id/1
+---
+2014/09/18 19:15:45 [error] [exception.CException] exception 'CException' with message 'Контроллер CategoryController не может найти представление "view_tags".' in /www/global.local/www/framework/web/CController.php:878
+Stack trace:
+#0 /www/global.local/www/framework/web/CController.php(782): CController->renderPartial('view_tags', Array, true)
+#1 /www/global.local/www/protected/controllers/CategoryController.php(110): CController->render('view_tags', Array)
+#2 [internal function]: CategoryController->actionViewTags('1')
+#3 /www/global.local/www/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(CategoryController), Array)
+#4 /www/global.local/www/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CategoryController), Object(ReflectionMethod), Array)
+#5 /www/global.local/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /www/global.local/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#12 /www/global.local/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /www/global.local/www/framework/web/CWebApplication.php(282): CController->run('viewTags')
+#14 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('category/viewTa...')
+#15 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /www/global.local/www/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/category/viewTags/id/1
+---
+2014/09/18 19:29:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Страница не активна.' in /www/global.local/www/protected/controllers/CategoryController.php:56
+Stack trace:
+#0 [internal function]: CategoryController->actionView('2')
+#1 /www/global.local/www/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(CategoryController), Array)
+#2 /www/global.local/www/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CategoryController), Object(ReflectionMethod), Array)
+#3 /www/global.local/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /www/global.local/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#10 /www/global.local/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /www/global.local/www/framework/web/CWebApplication.php(282): CController->run('view')
+#12 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('category/view/i...')
+#13 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /www/global.local/www/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/category/view/id/2
+HTTP_REFERER=http://global.local/category/index
+---
+2014/09/18 19:30:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Страница не активна.' in /www/global.local/www/protected/controllers/CategoryController.php:56
+Stack trace:
+#0 [internal function]: CategoryController->actionView('4')
+#1 /www/global.local/www/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(CategoryController), Array)
+#2 /www/global.local/www/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CategoryController), Object(ReflectionMethod), Array)
+#3 /www/global.local/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /www/global.local/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#10 /www/global.local/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /www/global.local/www/framework/web/CWebApplication.php(282): CController->run('view')
+#12 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('category/view/i...')
+#13 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /www/global.local/www/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/category/view/id/4
+HTTP_REFERER=http://global.local/category/index
+---
+2014/09/18 19:30:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Страница не активна.' in /www/global.local/www/protected/controllers/CategoryController.php:56
+Stack trace:
+#0 [internal function]: CategoryController->actionView('4')
+#1 /www/global.local/www/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(CategoryController), Array)
+#2 /www/global.local/www/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CategoryController), Object(ReflectionMethod), Array)
+#3 /www/global.local/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /www/global.local/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#10 /www/global.local/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /www/global.local/www/framework/web/CWebApplication.php(282): CController->run('view')
+#12 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('category/view/i...')
+#13 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /www/global.local/www/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/category/view/id/4
+HTTP_REFERER=http://global.local/category/index
+---
+2014/09/18 20:49:40 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in /www/global.local/www/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /www/global.local/www/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), '?? ?????? ?????...')
+#1 /www/global.local/www/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /www/global.local/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /www/global.local/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /www/global.local/www/framework/web/CWebApplication.php(282): CController->run('ViewTagsCounts')
+#8 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('product/ViewTag...')
+#9 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /www/global.local/www/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/product/ViewTagsCounts
+---
+2014/09/18 20:50:04 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in /www/global.local/www/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /www/global.local/www/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), '?? ?????? ?????...')
+#1 /www/global.local/www/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /www/global.local/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /www/global.local/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /www/global.local/www/framework/web/CWebApplication.php(282): CController->run('ViewTagsCounts')
+#8 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('product/ViewTag...')
+#9 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /www/global.local/www/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/product/ViewTagsCounts
+---
+2014/09/18 20:50:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in /www/global.local/www/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /www/global.local/www/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), '?? ?????? ?????...')
+#1 /www/global.local/www/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /www/global.local/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /www/global.local/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /www/global.local/www/framework/web/CWebApplication.php(282): CController->run('ViewTagsCounts')
+#8 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('product/ViewTag...')
+#9 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /www/global.local/www/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/product/ViewTagsCounts
+---
+2014/09/18 20:50:25 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM product WHERE product.active =1' at line 1. Выполнявшийся SQL-запрос: SELECT id,name, FROM product WHERE product.active =1.
+in /www/global.local/www/protected/controllers/ProductController.php (94)
+in /www/global.local/www/index.php (13)
+2014/09/18 20:50:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM product WHERE product.active =1' at line 1. The SQL statement executed was: SELECT id,name, FROM product WHERE product.active =1' in /www/global.local/www/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /www/global.local/www/framework/db/CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /www/global.local/www/protected/controllers/ProductController.php(94): CDbCommand->queryAll()
+#2 /www/global.local/www/framework/web/actions/CInlineAction.php(49): ProductController->actionViewTagsCounts()
+#3 /www/global.local/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /www/global.local/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#10 /www/global.local/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /www/global.local/www/framework/web/CWebApplication.php(282): CController->run('ViewTagsCounts')
+#12 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('product/ViewTag...')
+#13 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /www/global.local/www/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/product/ViewTagsCounts
+---
+2014/09/18 20:50:58 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM product WHERE active =1' at line 1. Выполнявшийся SQL-запрос: SELECT id,name, FROM product WHERE active =1.
+in /www/global.local/www/protected/controllers/ProductController.php (94)
+in /www/global.local/www/index.php (13)
+2014/09/18 20:50:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM product WHERE active =1' at line 1. The SQL statement executed was: SELECT id,name, FROM product WHERE active =1' in /www/global.local/www/framework/db/CDbCommand.php:541
+Stack trace:
+#0 /www/global.local/www/framework/db/CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /www/global.local/www/protected/controllers/ProductController.php(94): CDbCommand->queryAll()
+#2 /www/global.local/www/framework/web/actions/CInlineAction.php(49): ProductController->actionViewTagsCounts()
+#3 /www/global.local/www/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /www/global.local/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#10 /www/global.local/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /www/global.local/www/framework/web/CWebApplication.php(282): CController->run('ViewTagsCounts')
+#12 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('product/ViewTag...')
+#13 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /www/global.local/www/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/product/ViewTagsCounts
+---
+2014/09/18 21:08:34 [error] [php] Use of undefined constant name - assumed 'name' (/www/global.local/www/protected/views/product/view_products_tags_counts.php:10)
+Stack trace:
+#0 /www/global.local/www/framework/web/CController.php(869): ProductController->renderFile()
+#1 /www/global.local/www/framework/web/CController.php(782): ProductController->renderPartial()
+#2 /www/global.local/www/protected/controllers/ProductController.php(110): ProductController->render()
+#3 /www/global.local/www/framework/web/actions/CInlineAction.php(49): ProductController->actionViewTagsCounts()
+#4 /www/global.local/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /www/global.local/www/framework/web/filters/CFilterChain.php(133): ProductController->runAction()
+#6 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /www/global.local/www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): ProductController->filterAccessControl()
+#9 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#11 /www/global.local/www/framework/web/CController.php(265): ProductController->runActionWithFilters()
+#12 /www/global.local/www/framework/web/CWebApplication.php(282): ProductController->run()
+#13 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /www/global.local/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/product/ViewTagsCounts
+in /www/global.local/www/protected/views/product/view_products_tags_counts.php (10)
+in /www/global.local/www/protected/controllers/ProductController.php (110)
+in /www/global.local/www/index.php (13)
+2014/09/18 21:08:37 [error] [php] Use of undefined constant name - assumed 'name' (/www/global.local/www/protected/views/product/view_products_tags_counts.php:10)
+Stack trace:
+#0 /www/global.local/www/framework/web/CController.php(869): ProductController->renderFile()
+#1 /www/global.local/www/framework/web/CController.php(782): ProductController->renderPartial()
+#2 /www/global.local/www/protected/controllers/ProductController.php(110): ProductController->render()
+#3 /www/global.local/www/framework/web/actions/CInlineAction.php(49): ProductController->actionViewTagsCounts()
+#4 /www/global.local/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /www/global.local/www/framework/web/filters/CFilterChain.php(133): ProductController->runAction()
+#6 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /www/global.local/www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): ProductController->filterAccessControl()
+#9 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#11 /www/global.local/www/framework/web/CController.php(265): ProductController->runActionWithFilters()
+#12 /www/global.local/www/framework/web/CWebApplication.php(282): ProductController->run()
+#13 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /www/global.local/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/product/ViewTagsCounts
+in /www/global.local/www/protected/views/product/view_products_tags_counts.php (10)
+in /www/global.local/www/protected/controllers/ProductController.php (110)
+in /www/global.local/www/index.php (13)
+2014/09/18 21:33:35 [error] [php] Undefined variable: listAllTagsCounts (/www/global.local/www/protected/controllers/TagController.php:78)
+Stack trace:
+#0 /www/global.local/www/framework/web/filters/CFilterChain.php(133): TagController->runAction()
+#1 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /www/global.local/www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): TagController->filterAccessControl()
+#4 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /www/global.local/www/framework/web/CController.php(265): TagController->runActionWithFilters()
+#7 /www/global.local/www/framework/web/CWebApplication.php(282): TagController->run()
+#8 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /www/global.local/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/tag/all
+in /www/global.local/www/protected/controllers/TagController.php (78)
+in /www/global.local/www/index.php (13)
+2014/09/18 21:34:23 [error] [php] Undefined variable: min_db (/www/global.local/www/protected/controllers/TagController.php:80)
+Stack trace:
+#0 /www/global.local/www/framework/web/filters/CFilterChain.php(133): TagController->runAction()
+#1 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /www/global.local/www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): TagController->filterAccessControl()
+#4 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#6 /www/global.local/www/framework/web/CController.php(265): TagController->runActionWithFilters()
+#7 /www/global.local/www/framework/web/CWebApplication.php(282): TagController->run()
+#8 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /www/global.local/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/tag/all
+in /www/global.local/www/protected/controllers/TagController.php (80)
+in /www/global.local/www/index.php (13)
+2014/09/18 21:40:49 [error] [php] Use of undefined constant name - assumed 'name' (/www/global.local/www/protected/views/tag/all.php:6)
+Stack trace:
+#0 /www/global.local/www/framework/web/CController.php(869): TagController->renderFile()
+#1 /www/global.local/www/framework/web/CController.php(782): TagController->renderPartial()
+#2 /www/global.local/www/protected/controllers/TagController.php(94): TagController->render()
+#3 /www/global.local/www/framework/web/actions/CInlineAction.php(49): TagController->actionAll()
+#4 /www/global.local/www/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /www/global.local/www/framework/web/filters/CFilterChain.php(133): TagController->runAction()
+#6 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /www/global.local/www/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): TagController->filterAccessControl()
+#9 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#11 /www/global.local/www/framework/web/CController.php(265): TagController->runActionWithFilters()
+#12 /www/global.local/www/framework/web/CWebApplication.php(282): TagController->run()
+#13 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /www/global.local/www/index.php(13): CWebApplication->run()
+REQUEST_URI=/tag/all
+in /www/global.local/www/protected/views/tag/all.php (6)
+in /www/global.local/www/protected/controllers/TagController.php (94)
+in /www/global.local/www/index.php (13)
+2014/09/18 21:42:54 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in /www/global.local/www/framework/web/CController.php:336
+Stack trace:
+#0 /www/global.local/www/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /www/global.local/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#7 /www/global.local/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /www/global.local/www/framework/web/CWebApplication.php(282): CController->run('view')
+#9 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('tag/view/4')
+#10 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /www/global.local/www/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/tag/view/4
+HTTP_REFERER=http://global.local/tag/all
+---
+2014/09/18 21:42:58 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in /www/global.local/www/framework/web/CController.php:336
+Stack trace:
+#0 /www/global.local/www/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /www/global.local/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#7 /www/global.local/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /www/global.local/www/framework/web/CWebApplication.php(282): CController->run('view')
+#9 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('tag/view/5')
+#10 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /www/global.local/www/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/tag/view/5
+HTTP_REFERER=http://global.local/tag/all
+---
+2014/09/18 21:43:02 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in /www/global.local/www/framework/web/CController.php:336
+Stack trace:
+#0 /www/global.local/www/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /www/global.local/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#7 /www/global.local/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /www/global.local/www/framework/web/CWebApplication.php(282): CController->run('view')
+#9 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('tag/view/3')
+#10 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /www/global.local/www/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/tag/view/3
+HTTP_REFERER=http://global.local/tag/all
+---
+2014/09/18 21:43:35 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in /www/global.local/www/framework/web/CController.php:336
+Stack trace:
+#0 /www/global.local/www/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /www/global.local/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#7 /www/global.local/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /www/global.local/www/framework/web/CWebApplication.php(282): CController->run('view')
+#9 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('tag/view/4')
+#10 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /www/global.local/www/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/tag/view/4
+HTTP_REFERER=http://global.local/tag/all
+---
+2014/09/18 21:43:53 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in /www/global.local/www/framework/web/CController.php:336
+Stack trace:
+#0 /www/global.local/www/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /www/global.local/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#7 /www/global.local/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /www/global.local/www/framework/web/CWebApplication.php(282): CController->run('view')
+#9 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('tag/view/4')
+#10 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /www/global.local/www/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/tag/view/4
+HTTP_REFERER=http://global.local/tag/all
+---
+2014/09/18 21:43:54 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in /www/global.local/www/framework/web/CController.php:336
+Stack trace:
+#0 /www/global.local/www/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /www/global.local/www/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /www/global.local/www/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /www/global.local/www/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /www/global.local/www/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /www/global.local/www/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /www/global.local/www/framework/web/CController.php(291): CFilterChain->run()
+#7 /www/global.local/www/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /www/global.local/www/framework/web/CWebApplication.php(282): CController->run('view')
+#9 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('tag/view/4')
+#10 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /www/global.local/www/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/tag/view/4
+HTTP_REFERER=http://global.local/tag/all
+---
+2014/09/19 11:08:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in /www/global.local/www/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /www/global.local/www/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /www/global.local/www/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /www/global.local/www/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
